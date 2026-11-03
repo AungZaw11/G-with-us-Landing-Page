@@ -1,16 +1,29 @@
-# React + Vite
+# G-WITHUS Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, fully responsive corporate landing page for G-WITHUS, empowering maritime and digital operations. Built with a strict Flexbox-first approach and a feature-driven architecture.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
+* **Core:** React 18 + Vite (v6)
+* **Styling:** Tailwind CSS v4 (Strict Flexbox Layouts, No Grid)
+* **Routing:** React Router DOM
+* **Icons:** Lucide React
+* **Animations:** Anime.js
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📁 Project Structure
+The project follows a modular, feature-driven architecture for scalability and maintainability:
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+src/
+├── assets/             # Static assets (images, icons)
+├── common/             # Reusable components and hooks
+│   ├── components/     # Navbar, Footer
+│   ├── hooks/          # useAnimeFadeIn
+│   └── utils/          # Helper functions
+├── features/           # Feature-specific modules
+│   ├── about/          # About Us page components, data, and layouts
+│   ├── contact/        # Contact page components, data, and layouts
+│   ├── home/           # Home page components, data, and layouts
+│   ├── jobs/           # Career/Jobs page components, data, and layouts
+│   └── products/       # Products page components, data, and layouts
+├── App.jsx             # Main router configuration
+└── main.jsx            # Application entry point
